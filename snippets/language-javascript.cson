@@ -1,7 +1,7 @@
 '.source.js':
   'Object Method':
     'prefix': 'kf'
-    'body': '${1:methodName}: function (${2:attribute}) {\n\t$3\n}${4:,}'
+    'body': '${1:methodName}: function(${2:attribute}){\n\t$3\n}${4:,}'
   'Object key — key: "value"':
     'prefix': 'kv'
     'body': '${1:key}: ${2:\'${3:value}\'}${4:, }'
@@ -13,19 +13,19 @@
     'body': 'do {\n\t$2\n} while (${1:true});'
   'if':
     'prefix': 'if'
-    'body': 'if (${1:true}) {\n\t$2\n}'
+    'body': 'if(${1:true}){\n\t$2\n}'
   'if … else':
     'prefix': 'ife'
-    'body': 'if (${1:true}) {\n\t$2\n} else {\n\t$3\n}'
+    'body': 'if(${1:true}){\n\t$2\n}else{\n\t$3\n}'
   'else':
     'prefix': 'else'
-    'body': 'else {\n\t$1\n}'
+    'body': 'else{\n\t$1\n}'
   'else if':
     'prefix': 'elseif'
-    'body': 'else if (${1:true}) {\n\t$2\n}'
+    'body': 'else if(${1:true}){\n\t$2\n}'
   'for':
     'prefix' : 'for'
-    'body' : 'for (var ${2:i} = 0; ${2:i} < ${1:array}.length; ${2:i}++) {\n\t${1:array}[${2:i}]$3\n}'
+    'body' : 'for(var ${2:i} = 0; ${2:i} < ${1:array}.length; ${2:i}++){\n\t${1:array}[${2:i}]$3\n}'
   'for in':
     'prefix': 'forin'
     'body': 'for (var ${1:variable} in ${2:object}) {\n\t${3:if (${2:object}.hasOwnProperty(${1:variable})) {\n\t\t$4\n\t\\}}\n}'
@@ -34,16 +34,16 @@
     'body': 'for (${1:variable} of ${2:iterable}) {\n\t$3\n}'
   'Function':
     'prefix': 'fun'
-    'body': 'function ${1:functionName}($2) {\n\t$0\n}'
+    'body': 'function ${1:functionName}($2){\n\t$0\n}'
   'Anonymous Function':
     'prefix': 'f'
-    'body': 'function ($1) {\n\t$2\n}'
+    'body': 'function($1){\n\t$2\n}'
   'Generator':
     'prefix': 'gen',
     'body': 'function* ${1:functionName}($2) {\n\t$0\n}'
   'Anonymous Generator':
     'prefix': 'g'
-    'body': 'function* ($1) {\n\t$2\n}'
+    'body': 'function* ($1){\n\t$2\n}'
   'getElementsByClassName':
     'prefix': 'get'
     'body': 'getElementsByClassName(${1:\'${2:className}\'})$3'
@@ -85,10 +85,10 @@
     'body': 'setInterval(${2:function () {\n\t$3\n\\}}, ${1:10});'
   'setTimeout function':
     'prefix': 'timeout'
-    'body': 'setTimeout(${2:function () {\n\t$3\n\\}}, ${1:10});'
+    'body': 'setTimeout(${2:function(){\n\t$3\n\\}}, ${1:10});'
   'switch':
     'prefix': 'switch'
-    'body': 'switch (${1:expression}) {\n\tcase ${2:expression}:\n\t\t$4\n\t\tbreak;$5\n\tdefault:\n\t\t$3\n}'
+    'body': 'switch(${1:expression}){\n\tcase ${2:expression}:\n\t\t$4\n\t\tbreak;$5\n\tdefault:\n\t\t$3\n}'
   'case':
     'prefix': 'case'
     'body': 'case ${1:expression}:\n\t$2\n\tbreak;'
@@ -97,7 +97,7 @@
     'body': 'try {\n\t$1\n} catch (${2:e}) {\n\t$3\n}${4: finally {\n\t$5\n\\}}'
   'while':
     'prefix': 'while'
-    'body': 'while (${1:true}) {\n\t$2\n}'
+    'body': 'while(${1:true}){\n\t$2\n}'
   'Start Docblock':
     'prefix': '/**'
     'body': '/**\n * $1\n */$0'
