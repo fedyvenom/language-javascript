@@ -17,5 +17,10 @@
   },
   "devDependencies": {
     "coffeelint": "^1.10.1"
+  },
+  "apmInstallSource": {
+    "type": "git",
+    "source": "https://github.com/fedyvenom/language-javascript",
+    "sha": "6389826569e085ffc3192080ed5163b69c8172ba"
   }
 }
